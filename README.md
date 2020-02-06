@@ -1,6 +1,6 @@
 # Identidad en Kusama
 
-Traducción de la [guía](https://www.chevdor.com/post/2020-01-registrar1/) del [blog de Chevdor](https://www.chevdor.com/) para verificar la identidad en [Kusama](https://polkadot.js.org/apps/#/staking).
+Esta es una traducción de la [guía](https://www.chevdor.com/post/2020-01-registrar1/) del [blog de Chevdor](https://www.chevdor.com/) para verificar la identidad en [Kusama](https://polkadot.js.org/apps/#/explorer).
 
 > _Gracias a Chevdor (`@chevdor:matrix.org` en RIOT) por su trabajo y su ayuda para la verificación de la identidad._
 
@@ -16,13 +16,13 @@ A diferencia de lo que sugiere el nombre, este no es el primer registro de Kusam
 
 ---
 
-1. TL;DR
+### 1. TL;DR
 
-Si sólo quiere realizar la práctica, ignore las explicaciones puede ir directamente al proceso de [certificación]()*.
+Si sólo quiere realizar la práctica, ignore las explicaciones puede ir directamente al proceso de [certificación]().
 
 ---
 
-2. ¿Qué hacen los registradores?
+### 2. ¿Qué hacen los registradores?
 
 En primer lugar, dejemos claro que estamos hablando de un registrador de identidad. Su objetivo es verificar y certificar las identidades.
 
@@ -83,7 +83,7 @@ Necesitamos una forma de comprobar, verificar y almacenar el resultado en la cad
 
 ---
 
-3. ¿Cuáles son las reglas del registro?
+### 3. ¿Cuáles son las reglas del registro?
 
 "¡Depende!" es probablemente la respuesta más apropiada. Cada registrador puede decidir cuándo y qué validar.
 
@@ -91,7 +91,7 @@ En el próximo capítulo, describiré las reglas del Registrador #1 y cómo se h
 
 ---
 
-4. Niveles de registro
+### 4. Niveles de registro
 
 La siguiente lista puede cambiar en el futuro pero aquí están los estados actuales que puede tomar en cuenta:
 
@@ -111,7 +111,7 @@ La siguiente lista puede cambiar en el futuro pero aquí están los estados actu
 
 ---
 
-5. Reglas del registrador #1
+### 5. Reglas del registrador #1
 
 Kusama es una red experimental que permite desarrollar. Es por eso que las reglas de abajo pueden cambiar en el futuro.
 
@@ -119,7 +119,7 @@ Aquí están las reglas del Registro #1: - Se entrega en línea sólo el nivel "
 
 ---
 
-6. Desafíos
+### 6. Desafíos
 
 El principal objetivo de los desafíos es asegurar que el propietario de una cuenta determinada también controle el canal de comunicación. Esto ayuda a validar que la identidad no contiene ningún error de escritura, pero también que esos canales están activos y son válidos.
 
@@ -140,11 +140,11 @@ Aquí una muestra de desafío:
 
 ---
 
-7. Proceso de certificación
+### 7. Proceso de certificación
 
 Este es el proceso de certificación actual para el Registrador Nº 1.
 
-7.1. El usuario establece una identidad en la cadena
+### 7.1. El usuario establece una identidad en la cadena
 
 Mientras que se podría llamar a un _extrinsic_ directamente, la IU de Polkadot lo hace mucho más fácil.
 
@@ -170,7 +170,7 @@ Imagen 5. <code>setIdentity</code>
 
 Establecer la identidad en cadena actualmente requiere un depósito establecido en 10 KSMs. Esos fondos no van a ninguna parte, siguen siendo suyos pero están bloqueados en su cuenta mientras se establezca la identidad.
 
-7.2. Juicio de la solicitud del usuario
+### 7.2. Juicio de la solicitud del usuario
 
 El siguiente paso es solicitar a uno de los registradores que realice la verificación y emita un juicio.
 
@@ -199,7 +199,7 @@ Actualmente, el proceso de verificación del registro se está automatizando per
 
 Este es el momento de contactar con el operador del registro. Para el Operador de Registro #1, puede enviar un mensaje privado en Riot.
 
-7.3. Verificación interactiva
+### 7.3. Verificación interactiva
 
 Al contactar con `@chevdor:matrix.org`, no es necesario proporcionar mucho: la dirección de su cuenta es suficiente. Después de todo, los datos ya están en la cadena.
 
@@ -265,11 +265,11 @@ La comprobación con la [UI de Polkadot](https://polkadot.js.org/apps/#/toolbox/
 Imagen 9. Firma de uno de los retos
 </p>
 
-7.4. Comisión del registro
+### 7.4. Comisión del registro
 
 Es importante señalar que ningún KSM es enviado al registro en ningún momento. **NO** debe enviar o transferir fondos. Se transferirá al registrador sólo una vez que haya terminado su trabajo. Después de todo, estamos usando un sistema sin confianza.
 
-7.5. Certificación
+### 7.5. Certificación
 
 No tienes nada que hacer para el proceso de certificación. Normalmente es cuestión de segundos hasta que el `extrinsic` es entregado a la red por el registrador.
 
@@ -282,6 +282,7 @@ En cuanto este `extrinsic` llegue a la red, su cuenta será decorada con la marc
 Imagen 11. Cuenta verificada
 </p>
 
-> Advertencia: Recuerde que, a partir de ahora, llamar a `setIdentity` y cambiar cualquier información anulará sus certificaciones actuales y tendrá que empezar de nuevo desde la sección de juicio de solicitud de usuario.
+> Advertencia: Recuerde que, a partir de ahora, llamar a `setIdentity` y cambiar cualquier información anulará sus certificaciones actuales y tendrá que empezar de nuevo desde la sección de [juicio de solicitud]() de usuario.
 
-_Realizado por [wimel](https://github.com/wimel) desde [ColmenaLabs_svq](https://www.colmenalabs.org/)_.
+
+_Traducción realizada por [wimel | DelegaNetworks](https://github.com/wimel) desde [ColmenaLabs_svq](https://www.colmenalabs.org/)_.
