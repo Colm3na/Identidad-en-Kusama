@@ -18,7 +18,7 @@ A diferencia de lo que sugiere el nombre, este no es el primer registro de Kusam
 
 ### 1. TL;DR
 
-Si sólo quiere realizar la práctica, ignore las explicaciones puede ir directamente al proceso de [certificación]().
+Si sólo quiere realizar la práctica, ignore las explicaciones puede ir directamente al proceso de [certificación](#7-proceso-de-certificación).
 
 ---
 
@@ -282,7 +282,7 @@ En cuanto este `extrinsic` llegue a la red, su cuenta será decorada con la marc
 Imagen 11. Cuenta verificada
 </p>
 
-> Advertencia: Recuerde que, a partir de ahora, llamar a `setIdentity` y cambiar cualquier información anulará sus certificaciones actuales y tendrá que empezar de nuevo desde la sección de [juicio de solicitud]() de usuario.
+> Advertencia: Recuerde que, a partir de ahora, llamar a `setIdentity` y cambiar cualquier información anulará sus certificaciones actuales y tendrá que empezar de nuevo desde la sección de [juicio de solicitud](#72-juicio-de-la-solicitud-del-usuario) de usuario.
 
 
 _Traducción realizada por [wimel | DelegaNetworks](https://github.com/wimel) desde [ColmenaLabs_svq](https://www.colmenalabs.org/)_.
